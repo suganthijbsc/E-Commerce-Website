@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Orders - ShopEase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="logo">
+                ShopEase
+            </div>
+
+            <div class="nav-links"> 
+    
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="my-orders.html">My Orders</a>
+            <a href="cart.html">Cart 🛒</a>
+        
+            </div>
+        </nav>
+    </header>
+    
+
+
+    <main>
+
+    <h2 class="page-title">My Orders</h2>
+
+        <div class="order-filters">
+
+    <input
+        type="text"
+        id="orderSearch"
+        placeholder="Search Order ID..."
+    >
+
+    <select id="orderStatusFilter">
+
+        <option value="All">All Status</option>
+        <option value="Pending">Pending</option>
+        <option value="Cancelled">Cancelled</option>
+        <option value="Delivered">Delivered</option>
+        <option value="Returned">Returned</option>
+
+    </select>
+
+</div>
+
+        <div id="ordersContainer">
+
+            <p>Loading orders...</p>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

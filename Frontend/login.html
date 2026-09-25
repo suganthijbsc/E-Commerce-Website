@@ -32,7 +32,7 @@
 
                 <a href="product.html">Products</a>
 
-                <a href="#">Categories</a>
+                <a href="index.html#categories">Categories</a>
 
                 <a href="#">Offers</a>
 
@@ -88,13 +88,23 @@
                             Password
                         </label>
 
-                        <input
-                            type="password"
-                            id="loginPassword"
-                            placeholder="Enter your password"
-                            required
-                        >
+                        <div class="password-wrapper">
 
+    <input
+        type="password"
+        id="loginPassword"
+        placeholder="Enter your password"
+        required
+    >
+
+    <button
+        type="button"
+        id="togglePassword">
+       👁️ 
+    </button>
+    
+
+</div>
                     </div>
 
 
@@ -105,7 +115,7 @@
 
                     <p class="signup-text">
                         Don't have an account?
-                        <a href="#">Sign Up</a>
+                        <a href="signup.html">Sign Up</a>
                     </p>
 
                 </form>
@@ -120,6 +130,22 @@
     <!-- JavaScript -->
     <script src="js/script.js"></script>
 
+    <script>
+const togglePassword = document.getElementById("togglePassword");
+const loginPassword = document.getElementById("loginPassword");
+
+togglePassword.addEventListener("click", function () {
+
+    if (loginPassword.type === "password") {
+        loginPassword.type = "text";
+        togglePassword.textContent = "🙈";
+    } else {
+        loginPassword.type = "password";
+        togglePassword.textContent = "👁️";
+    }
+
+});
+</script>
 </body>
 
 </html>

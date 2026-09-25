@@ -34,6 +34,8 @@
 
                 <a href="product.html">Products</a>
 
+                <a href="my-orders.html">My Orders</a>
+
                 <a href="#">Categories</a>
 
                 <a href="#">Offers</a>
@@ -102,7 +104,18 @@
 
 </div>
 
+<!-- Sort By -->
+<div class="sort-container">
+    <label for="sortProducts">Sort By:</label>
 
+    <select id="sortProducts">
+        <option value="default">Default</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="name-az">Name: A to Z</option>
+        <option value="name-za">Name: Z to A</option>
+    </select>
+</div>
             <!-- Product Container -->
             <div
                 class="products"

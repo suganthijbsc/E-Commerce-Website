@@ -65,6 +65,10 @@ E-Commerce-Website/
 │   ├── product.html
 │   ├── cart.html
 │   ├── login.html
+│   ├── checkout.html
+│   ├── order-success.html
+│   ├── my-orders.html
+│   ├── signup.html
 │   ├── style.css
 │   └── script.js
 │
